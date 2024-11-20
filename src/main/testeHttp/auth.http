@@ -1,0 +1,9 @@
+@url = https://8080-dennisfarias-p2api-q2jyr33n4lc.ws-us116.gitpod.io
+
+POST {{url}}/auth
+Content-Type: application/json
+
+{
+    "nomeDeUsuario": "admin",
+    "senha": "admin"
+}

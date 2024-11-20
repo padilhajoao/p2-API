@@ -1,0 +1,44 @@
+@url = https://8080-dennisfarias-p2api-q2jyr33n4lc.ws-us116.gitpod.io
+
+@token = DYkomeLQylAEq3LxCKGYZvaB29WO3TgV8yHRjp8dFuSytL0RAWSLKR6oaOMAhUdKDgY7uVw0ofC2agK524Q58zWhMuqzb8goM3WVLBbl296GJbccM9qhDab6ak5tYjzlVCgkoHTz7OglSaMwWO4
+
+###
+GET {{url}}/tarefas
+Authorization: Bearer {{token}}
+
+###
+GET {{url}}/tarefas/1
+Authorization: Bearer {{token}}
+
+###
+POST {{url}}/tarefas
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "titulo": "Título",
+    "descricao": "Descrição",
+    "dataInicio": "2024-11-18",
+    "dataConclusao": "2024-11-30"
+}
+
+###
+PUT {{url}}/tarefas/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "titulo": "Título - Alterado"
+}
+
+###
+DELETE {{url}}/tarefas/1
+Authorization: Bearer {{token}}
+
+###
+POST {{url}}/tarefas/1/colaboradores/1
+Authorization: Bearer {{token}}
+
+###
+DELETE {{url}}/tarefas/1/colaboradores/1
+Authorization: Bearer {{token}}
